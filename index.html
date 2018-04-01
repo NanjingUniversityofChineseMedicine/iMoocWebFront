@@ -8,41 +8,46 @@
 </head>
 <body>
 <div id="header">
-	<div class="page-container" id="nav" style="background-color: #fff !important;">
+	<div class="page-container" id="nav" style="background-color:#fff !important;">
 		<div id="logo" class="logo">
-			<a href="/" target="_self" title="首页"></a>
+			<a href="/"  title="首页">打造大众中医</a>  <!--这里放我们的logo  -->
 		</div>
-		<button type="button" class="navbar-toggle visible-xs-block js-show-menu">
-			<i class="icon-menu"></i>
-		</button>
 		<ul class="nav-item">
-			<li class="set-btn visible-xs-block"><a href="/static/page/newlogin" target="_self">登录</a> / <a href="/static/page/newlogin" target="_self">注册</a></li>
-			<li> <a href="/static/page/" target="_self">课程</a> </li>
-			<li><a href="#" class="program-nav " target="_self">分类<i class="icn-new"></i></a></li>
-			<li> <a href="#" target="_self">路径</a> </li>
+			<li><a href="/static/page/" target="_self">课程</a> </li>  <!--加入其他页面 -->
+			<li><a href="#" target="_self">分类<i class="icn-new"></i></a></li>
+			<li><a href="#" target="_self">路径</a> </li>
 			<li><a href="#" target="_self">学校</a></li>
 			<li><a href="#" target="_self">关于</a></li>
 		</ul>
+
 		<div id="login-area">
-			<ul class="header-unlogin clearfix">
-				<li class="shop-cart" id="shop-cart"> <a href="#" class="shop-cart-icon" target="_blank"> <span class="icon-shopping-cart js-endcart"></span><span>购物车</span><span class="shopping_icon js-cart-num" data-ordernum="0" data-cartnum="0" style="display: none">0</span> </a>
-					<div class="my-cart" id="js-my-cart"></div> </li>
-				<li class="header-signin"> <a href="#" id="js-signin-btn">登录</a> / <a href="#" id="js-signup-btn">注册</a> </li>
+			<ul class="header-unlogin">
+				<li class="shop-cart">
+					<a href="#" class="shop-cart-icon"  target="_blank">
+					<span class="icon-shopping-cart"></span>
+					<span>购物车</span>
+					<span class="shopping_icon"style="display:none">0</span>
+				  </a>
+					<div class="my-cart"></div>
+				</li>
+				<li class="header-signin"> <a href="#">登录</a>/
+					<a href="#">注册</a>
+			  </li>
 			</ul>
 		</div>
-		<div class="search-warp clearfix" style="min-width: 32px; height: 72px;">
+
+
+		<div class="search-warp" style="min-width: 32px; height: 72px;">
 			<div class="pa searchTags">
 				<a href="#" target="_blank">推拿入门</a>
 				<a href="#" target="_blank">养生保健</a>
 			</div>
-			<div class="search-area" data-search="top-banner">
-				<input class="search-input" data-suggest-trigger="suggest-trigger" type="text" autocomplete="off" />
-				<input type="hidden" class="btn_search" data-search-btn="search-btn" />
-				<ul class="search-area-result" data-suggest-result="suggest-result">
-				</ul>
+			<div class="search-area" >
+				<input class="search-input" type="text"/>
+				<input type="hidden" class="btn_search"/>
 			</div>
-			<div class="showhide-search" data-show="no">
-				<i class="icon-search"></i>
+			<div class="showhide-search">
+				<i class="icon-search"></i> <!-- 这里欠缺图标-->
 			</div>
 		</div>
 	</div>
@@ -53,63 +58,74 @@
 		<div class="g-banner pr">
 			<div class="g-banner-content">
 				<div class="g-banner-box">
-					<a target="_blank" href="#" data-track="banner-1-1" class="click-help">
+					<a target="_blank" href="#" class="click-help">
 						<div class="banner-slide" data-url="">
-							<img src="" />
-						</div> </a>
-					<div class="banner-dots"></div>
-					<a href="javascript:;" class="banner-anchor prev icon-left2" style="display: none"></a>
-					<a href="javascript:;" class="banner-anchor next icon-right2" style="display: none"></a>
+							<img src="" />    	<!-- 需要实现在图片下面说明文字 -->
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+
 	<div class="path-banner clearfix">
-		<a href="" target="_blank" data-track="ljtj-1-1"> <i class="i-web"></i> <p class="tit">中医</p> <p class="desc">五行七脏</p> </a>
-		<a href="" target="_blank" data-track="ljtj-1-3"> <i class="i-java"></i> <p class="tit">针灸</p> <p class="desc">一针根治百病</p> </a>
-		<a href="" target="_blank" data-track="ljtj-1-4"> <i class="i-android"></i> <p class="tit">推拿</p> <p class="desc">帅！！</p> </a>
-		<a href="" target="_blank" data-track="ljtj-1-2"> <i class="i-php"></i> <p class="tit">拔罐</p> <p class="desc">纳尼</p> </a>
-		<a href="" target="_blank" data-track="ljtj-1-5"> <i class="i-ios"></i> <p class="tit">中医儿科学</p> <p class="desc">王牌</p> </a>
-		<a href="" target="_blank" data-track="ljtj-1-5"> <i class="i-ios"></i> <p class="tit">中医诊断学</p> <p class="desc">王牌</p> </a>
-		<a href="" target="_blank" data-track="ljtj-1-5"> <i class="i-ios"></i> <p class="tit">中医络病学</p> <p class="desc">王牌</p> </a>
-		<a href="" target="_blank" data-track="ljtj-1-5"> <i class="i-ios"></i> <p class="tit">中医内科学</p> <p class="desc">王牌</p> </a>
+		<a href="" target="_blank" > <i class="i-zhongyi"></i> <p class="tit">中医</p>  <!-- 这里要加入相应的图片-->
+			<p class="desc">五行七脏</p> </a>
+		<a href="" target="_blank" > <i class="i-zhenjiu"></i> <p class="tit">针灸</p>
+			 <p class="desc">一针根治百病</p> </a>
+		<a href="" target="_blank" > <i class="i-tuina"></i> <p class="tit">推拿</p>
+			 <p class="desc">帅！！</p> </a>
 	</div>
+
+  <!--非常重要 点击下来实现分类     js实现 -->
+
 	<div class="bgfff">
-		<div class="container-types clearfix">
-			<h3 class="types-title"> <span class="tit-icon icon-shizhan-l tit-icon-l"></span> <em>课</em><em>程</em><em>推</em><em>荐</em> <span class="tit-icon icon-shizhan-r tit-icon-r"></span>
-				<!-- <a href='//coding.imooc.com' class='types-title-more' target="_blank">					<span>更多</span>					<i class='imv2-arrow2_r'></i>				</a> --> </h3>
+		<div class="container-types">
+			<h3 class="types-title">
+			<em>课</em><em>程</em><em>推</em><em>荐</em>
+			<span  class="">更多</span>   <!--这里跳转到“课程推荐”标签下的课程列表 -->
+		</a> -->
+	</h3>
 			<div class="clearfix types-content">
-				<div class="index-card-container course-card-container container">
-					<a target="_blank" class="course-card" href="static/page/course.html" data-track="sztj-1-1">
-						<div class="course-card-top hashadow">
-							<img class="course-banner" src="" />
+				<div class="index-card-container course-card-container">
+						<div class="course-card-top">
+							<img class="course-banner" src="" />  <!-- 放入课程的照片 -->
 							<div class="course-label">
 								<label>八极惊雷</label>
 							</div>
 						</div>
 						<div class="course-card-content">
 							<h3 class="course-card-name">八极之力，撼天动地</h3>
-							<div class="clearfix course-card-bottom">
+							<div class="course-card-bottom">
+
 								<div class="course-card-info">
 									<span>实战</span>
 									<span>初级</span>
 									<span> </span>
 								</div>
 								<div class="course-card-price">
+
 									998RNB
 								</div>
 							</div>
-						</div> </a>
+						</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="bgfff">
-			<div class="container-types clearfix">
-				<h3 class="types-title"> <span class="tit-icon icon-shizhan-l tit-icon-l"></span><em>基</em><em>础</em><em>入</em><em>门</em><span class="tit-icon icon-shizhan-r tit-icon-r"></span>
-					<!-- <a href='//coding.imooc.com' class='types-title-more' target="_blank">					<span>更多</span>					<i class='imv2-arrow2_r'></i>				</a> --> </h3>
+			<div class="container-types">
+				<h3 class="types-title">
+					<em>基</em><em>础</em><em>入</em><em>门</em>
+					<span  class="">更多</span>   <!--这里跳转到“肌醇入门”标签下的课程列表 -->
+				</a> -->
+				</h3>
 				<div class="clearfix types-content">
-					<div class="index-card-container course-card-container container">
-						<a target="_blank" class="course-card" href="#" data-track="sztj-1-1">
+					<div class="index-card-container course-card-container ">
+						<a target="_blank" class="course-card" href="#" >
+
 							<div class="course-card-top hashadow">
 								<img class="course-banner" src="" />
 								<div class="course-label">
@@ -117,7 +133,7 @@
 								</div>
 							</div>
 							<div class="course-card-content">
-								<h3 class="course-card-name">听海苦的声音</h3>
+								<h3 class="course-card-name">中医入门经典</h3>
 								<div class="clearfix course-card-bottom">
 									<div class="course-card-info">
 										<span>实战</span>
@@ -128,25 +144,30 @@
 										0RNB
 									</div>
 								</div>
-							</div> </a>
+							</div>
 					</div>
 				</div>
 			</div>
+
 			<div class="bgfff">
 				<div class="container-types clearfix">
-					<h3 class="types-title"> <span class="tit-icon icon-shizhan-l tit-icon-l"></span> <em>免</em><em>费</em><em>课</em><em>程</em><span class="tit-icon icon-shizhan-r tit-icon-r"></span>
-						<!-- <a href='//coding.imooc.com' class='types-title-more' target="_blank">					<span>更多</span>					<i class='imv2-arrow2_r'></i>				</a> --> </h3>
+					<h3 class="types-title">
+						 <em>免</em><em>费</em><em>课</em><em>程</em>
+						 <span  class="">更多</span>   <!--这里跳转到“免费课程”标签下的课程列表 -->
+					 </a> -->
+					</h3>
 					<div class="clearfix types-content">
-						<div class="index-card-container course-card-container container">
-							<a target="_blank" class="course-card" href="#" data-track="sztj-1-1">
+						<div class="index-card-container course-card-container">
+							<a target="_blank" class="course-card" href="#">
+
 								<div class="course-card-top hashadow">
 									<img class="course-banner" src="" />
 									<div class="course-label">
-										<label>九阴真经</label>
+										<label>拔罐入门</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">天下九阴，唯我独一</h3>
+									<h3 class="course-card-name">养生小妙招</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span>
@@ -162,12 +183,15 @@
 					</div>
 				</div>
 				<div class="bgfff">
-					<div class="container-types clearfix">
-						<h3 class="types-title"> <span class="tit-icon icon-shizhan-l tit-icon-l"></span><em>热</em><em>门</em><em>课</em><em>程</em><span class="tit-icon icon-shizhan-r tit-icon-r"></span>
-							<!-- <a href='//coding.imooc.com' class='types-title-more' target="_blank">					<span>更多</span>					<i class='imv2-arrow2_r'></i>				</a> --> </h3>
+					<div class="container-types">
+						<h3 class="types-title">
+							<em>热</em><em>门</em><em>课</em><em>程</em>
+							<span  class="">更多</span>   <!--这里跳转到“热门课程”标签下的课程列表 -->
+						</a> -->
+							 </h3>
 						<div class="clearfix types-content">
-							<div class="index-card-container course-card-container container">
-								<a target="_blank" class="course-card" href="#" data-track="sztj-1-1">
+							<div class="index-card-container course-card-container">
+								<a target="_blank" class="course-card" href="#">
 									<div class="course-card-top hashadow">
 										<img class="course-banner" src="" />
 										<div class="course-label">
@@ -192,11 +216,14 @@
 					</div>
 					<div class="bgfff">
 						<div class="container-types clearfix">
-							<h3 class="types-title"> <span class="tit-icon icon-shizhan-l tit-icon-l"></span><em>前</em><em>沿</em><em>课</em><em>程</em><span class="tit-icon icon-shizhan-r tit-icon-r"></span>
-								<!-- <a href='//coding.imooc.com' class='types-title-more' target="_blank">					<span>更多</span>					<i class='imv2-arrow2_r'></i>				</a> --> </h3>
+							<h3 class="types-title">
+								<em>前</em><em>沿</em><em>课</em><em>程</em>
+								<span  class="">更多</span>   <!--这里跳转到“前沿课程”标签下的课程列表 -->
+							</a> -->
+							</h3>
 							<div class="clearfix types-content">
 								<div class="index-card-container course-card-container container">
-									<a target="_blank" class="course-card" href="" data-track="sztj-1-1">
+									<a target="_blank" class="course-card" href="">
 										<div class="course-card-top hashadow">
 											<img class="course-banner" src="#" />
 											<div class="course-label">
@@ -204,7 +231,7 @@
 											</div>
 										</div>
 										<div class="course-card-content">
-											<h3 class="course-card-name">天龙寺专属</h3>
+											<h3 class="course-card-name">这边是</h3>
 											<div class="clearfix course-card-bottom">
 												<div class="course-card-info">
 													<span>实战</span>
@@ -219,9 +246,7 @@
 								</div>
 							</div>
 						</div>
-						<!--[if IE]>
 
-						<![endif]-->
 						<div class="p-index-schoolFunc">
 							<div class="p-index-schoolFunc-i">
 								<div class="u-topSchool-container">
