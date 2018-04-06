@@ -1,8 +1,62 @@
 @charset "utf-8"
 /*公用*/
-.comWidth{width: 1200px;margin：0 auto;}
 
-/*topBar*/
-.topBar{height: 70px;background-color: FFFFFF;line-height: 31px;}
+.loginBlock .loginBox{
+  width: 440px;
+  border: #999 solid 1 px;
+  margin: 10px auto;
+}
 
-/*登录*/
+.logn_cont{
+  padding: 15px 40px;
+}
+
+.login_logo .comWidth{
+  width: 630px;
+}
+
+.login_login .logn {
+  margin-left: 60px;
+}
+
+.zuoyouming{
+  font: 22px/85px "Microsoft YaHei","微软雅黑";
+  color：#FFF;
+  float: left;
+  padding-left: 24px;
+}
+
+
+.l_tit {
+  color: #666;
+  line-height: 20px;
+}
+
+.login_cout {
+  padding: 15px 40px;
+}
+
+.login_input {
+  norder: #999 solid 1px;
+  height: 32px;
+  line-height: 32px/9;
+  text-index: 5px;
+  width: 100%;
+}
+
+.md_10 {
+  margin-bottom: 10px;
+}
+
+.autoLogin{
+  padding-top: 27px;
+  padding-bottom: 28px;
+}
+.checked{
+  postition:relative;
+  top:3px;
+  margin-right: 3px;
+}
+.login_btn{width:309px;
+height:36px;
+background:url(/static/img/Login.jpg)}
