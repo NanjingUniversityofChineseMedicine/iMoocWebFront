@@ -4,54 +4,62 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="/static/css/main.css">
+  <script type="text/javascript" rel="stylesheet"src="/static/js/main.js"></script>
 	<title>登录/注册</title>
-
-
 </head>
 
-<body background="/static/img/Xiangyun.png">
+<body background="/static/img/background.jpg" style="background-size:100% 100%">
 	<div class="header">
-		<div class="lognBar login_logo">
-			<div class="comWidth">
-				<div class="logo fl">
-					<a href="#" target="_blank" title="岐黄慕课logn"><img src="#" alt="岐黄慕课"></a>
-				</div>
-				<h3 class="zuoyouming">九州无病声</h3>
-			</div>
-		</div>
+		<a href="#" target="_blank" title="岐黄慕课logn"><img src="#" alt="岐黄慕课"></a>
+		<h1>九州无病声</h1>
 	</div>
-	<!--登录/注册框-->
-	<div class="loginBlock">
-		<div class="loginBox">
-			<div class="login_cout">
-				<div class="loginFunc">
-					<div id="" class="loginFun">登录</div>
-					<div id="" class="regFun">注册</div>
-				</div>
-				<ul class="login">
-					<li class="l_tit">邮箱/用户名</li>
-					<li class="mb_10"><input type="text" class="login_input"></li>
-					<li class="l_tit">密码</li>
-					<li class="mb_10"><input type="password" class="login_input"></li>
-					<li class="autoLogin"><input type="checkbox" id="a1" class="checked"> <label for="a1">自动登录</label>
-				 	</li>
-					<li class="forgetpas">
-						<label href="#">忘记密码？</label>
-					</li>
-					<li><input type="button" value="" class="login_btn"></li>
-				</ul>
-				<div class="login_partners">
-					<p>使用合作方账号登录网站</p>
-					<ul class="login_list" style=list-style:none;margin:0;>
-						<li style=”display:inline”><a href="#">QQ</a></li>
-						<li style=”display:inline”><span>|</span></li>
 
-						<li style=”display:inline”><a href="#">微信</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+	<!--登录/注册框-->
+
+  <div class="login-box">
+    <div class="lb-header">
+      <a href="../index.html" class="active" id="login-box-link">登录</a>
+      <a href="../index.html" id="signup-box-link">注册</a>
+    </div>
+    <div class="social-login">
+      <a href="#">
+        <i class="fa QQ fa-lg"></i>
+        QQ登录
+      </a>
+      <a href="#">
+        <i class="fa WeChat fa-lg"></i>
+        微信登录
+      </a>
+    </div>
+    <form class="email-login">
+      <div class="u-form-group">
+        <input type="email" placeholder="邮箱"/>
+      </div>
+      <div class="u-form-group">
+        <input type="password" placeholder="密码"/>
+      </div>
+      <div class="u-form-group">
+        <button>登录</button>
+      </div>
+      <div class="u-form-group">
+        <a href="#" class="forgot-password">忘记密码?</a>
+      </div>
+    </form>
+    <form class="email-signup">
+      <div class="u-form-group">
+        <input type="email" placeholder="邮箱"/>
+      </div>
+      <div class="u-form-group">
+        <input type="password" placeholder="密码"/>
+      </div>
+      <div class="u-form-group">
+        <input type="password" placeholder="确认密码"/>
+      </div>
+      <div class="u-form-group">
+        <button>注册</button>
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
