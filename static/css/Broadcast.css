@@ -15,7 +15,9 @@
   display: -ms-flexbox;
   display: flex;
 }
-
+h1{
+  float: left;
+}
 body {
   margin-top: 50px;
   float: left;
