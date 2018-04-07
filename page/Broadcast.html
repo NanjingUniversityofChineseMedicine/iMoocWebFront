@@ -1,8 +1,13 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>播放页</title>
+	<link rel="stylesheet" href="../static/css/Broadcast.css" >
+
+</head>
 <div id="instructions">
-  <video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"
-      controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg'
-      data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+  <video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none" poster='../static/img/background.jpg' data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
     <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
     <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
   </video>
@@ -14,23 +19,3 @@
   </ol>
   <h2>课程评论</h2>
 </div>
-<style>
-  #instructions { max-width: 1000px; text-align: left; margin: 40px auto; }
-  #instructions textarea { width: 100%; height: 100px; }
-  .video-js .vjs-control-bar {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  body {
-    margin-top: 50px;
-    float: left;
-    text-align: center;
-    color: #aaa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  }
-
-  a, a:hover, a:visited { color: #76DAFF; }
-</style>
