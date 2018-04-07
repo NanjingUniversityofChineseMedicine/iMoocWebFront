@@ -1,78 +1,137 @@
-@charset "utf-8"
-/*公用*/
 
-.comWidth {
-  margin-left: auto;
+html body {
+  position: relative;
+
+
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .header {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #002b75;
 }
 
-.loginBlock .loginBox {
-  width: 440px;
-  border: #999 solid 1 px;
-  margin: 20px 800px;
+.login-box{
+  position:relative;
+  margin: 100px auto;
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
 }
-
-ul li {
-  list-style-type: none;
+.lb-header{
+  position:relative;
+  color: #00415d;
+  margin: 5px 5px 10px 5px;
+  padding-bottom:10px;
+  border-bottom: 1px solid #eee;
+  text-align:center;
+  height:28px;
 }
-
-.logn_cont {
-  padding: 15px 40px;
-}
-
-.login_logo .comWidth {
-  width: 630px;
-}
-
-.login_login .logn {
-  margin-left: 60px;
-}
-
-.zuoyouming {
-  font: 22px/85px "Microsoft YaHei", "微软雅黑";
-  color：#FFF;
-  float: left;
-  padding-left: 24px;
-}
-
-.l_tit {
+.lb-header a{
+  margin: 0 25px;
+  padding: 0 20px;
+  text-decoration: none;
   color: #666;
-  line-height: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
-
-.login_cout {
-  padding: 15px 40px;
+.lb-header .active{
+  color: #DF4A32;
+  font-size: 18px;
 }
-
-.login_input {
-  norder: #999 solid 1px;
-  height: 32px;
-  line-height: 32px/9;
-  text-index: 5px;
+.social-login{
+  position:relative;
+  float: left;
   width: 100%;
+  height:auto;
+  padding: 10px 0 15px 0;
+  border-bottom: 1px solid #eee;
 }
-
-.md_10 {
+.social-login a{
+  position:relative;
+  float: left;
+  width:calc(40% - 8px);
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.05);
+  padding: 12px;
+  border-radius: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 3%;
+  text-align:center;
+}
+.social-login a i{
+  position: relative;
+  float: left;
+  width: 20px;
+  top: 2px;
+}
+.social-login a:first-child{
+  background-color: #49639F;
+}
+.social-login a:last-child{
+  background-color: #029f5b;
+}
+.email-login,.email-signup{
+  position:relative;
+  float: left;
+  width: 100%;
+  height:auto;
+  margin-top: 20px;
+  text-align:center;
+}
+.u-form-group{
+  width:100%;
   margin-bottom: 10px;
 }
-
-.autoLogin {
-  padding-top: 27px;
-  padding-bottom: 28px;
+.u-form-group input[type="email"],
+.u-form-group input[type="password"]{
+  width: calc(50% - 22px);
+  height:45px;
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-radius: 2px;
+  color: #333;
+  font-size:0.8rem;
+  -webkit-transition:all 0.1s linear;
+  -moz-transition:all 0.1s linear;
+  transition:all 0.1s linear;
 }
-
-.forgetpas {
-  padding-top: 10px;
-  padding-bottom: 28px;
-  padding:left;
+.u-form-group input:focus{
+  border-color: #358efb;
 }
-.checked {
-  postition: relative;
-  top: 3px;
-  margin-right: 3px;
+.u-form-group button{
+  width:50%;
+  background-color:#DF4A32;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 14px 0;
+  border-radius: 2px;
+  text-transform: uppercase;
 }
-
-.login_btn {
-  width: 309px;
-  height: 36px;
-  background: url(/static/img/Login.jpg)
+.forgot-password{
+  width:50%;
+  text-align: left;
+  text-decoration: underline;
+  color: #888;
+  font-size: 0.75rem;
 }
