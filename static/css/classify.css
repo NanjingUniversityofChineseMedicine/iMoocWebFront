@@ -4,3 +4,22 @@
 .products .rightArea{
   width:810px;
 }
+.leftNav{
+  background-color: #F3F3F3;
+  border: #D7D7D7 solid 1px;
+}
+.nav_title{
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  border-bottom: #D7D7D7 solid 1px;
+  text-align: center;
+}
+.nav_cont{
+  padding: 0 18px 4px;
+}
+.nav_cont h3{
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+}
