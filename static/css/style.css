@@ -17,10 +17,7 @@ address, caption, cite, code, dfn, em, strong, th, var, optgroup {
   font-weight: 400
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: 400
-}
+
 
 abbr, acronym {
   border: 0;
@@ -36,11 +33,7 @@ input, button, textarea, select {
   border: 0
 }
 
-body {
-  background: #fff;
-  color: #5e5e5e;
-  font: 14px/2em Microsoft YaHei, SimSun, Arial
-}
+
 
 ol, ul {
   list-style: none
@@ -140,10 +133,7 @@ h2 {
   font-size: 20px
 }
 
-h3 {
-  font-size: 16px;
-  line-height: 32px
-}
+
 
 h5 {
   font-size: 14px;
@@ -675,14 +665,7 @@ a:active, a:hover {
   margin: 0 20px
 }
 
-#logo a, .logo a {
-  display: block;
-  height: 72px;
-  width: 140px;
-  background: url(/static/img/common/logo.png?t=2.4) center center no-repeat;
-  text-indent: 100%;
-  overflow: hidden
-}
+
 
 .logo a {
   transition: background-color .2s
@@ -1260,13 +1243,7 @@ a:active, a:hover {
   background-position: 19px -207px
 }
 
-.myspace_remind {
-  width: 10px;
-  height: 10px;
-  background: url(/static/img/space-remind.png) no-repeat;
-  top: 10px;
-  right: 10px
-}
+
 
 #footer {
   background: #000;
