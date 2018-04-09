@@ -1,5 +1,7 @@
+
 .products .leftArea{
   width:185px;
+  float: left;
 }
 .products .rightArea{
   width:810px;
@@ -8,6 +10,7 @@
   background-color: #F3F3F3;
   border: #D7D7D7 solid 1px;
 }
+
 .nav_title{
   height: 34px;
   line-height: 34px;
@@ -17,9 +20,34 @@
 }
 .nav_cont{
   padding: 0 18px 4px;
+  border-bottom: #D7D7D7 1px dotted;
+  margin-bottom: -1px;
 }
 .nav_cont h3{
-  font-size: 12px;
+  font-size: 30px;
   height: 30px;
   line-height: 30px;
+
+}
+.navCont_list{
+  line-height: 30px;
+}
+.navCont_list li{
+  float: left;
+  width: 60%;
+}
+.hr_7{
+  height: 7px;
+  overflow: hidden;
+}
+.products_title{
+  height: 34px;
+  border-bottom: #CCCCCC solid 2px;
+}
+.products_title h3{
+  width:180px;
+  border-bottom: #096DBA solid 2px;
+  height: 34px;
+  line-height: 34px;
+  text-indent: 9px;
 }
