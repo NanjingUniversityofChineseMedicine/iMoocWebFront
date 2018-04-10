@@ -15,11 +15,13 @@
   display: -ms-flexbox;
   display: flex;
 }
-
+h1{
+  float: left;
+}
 body {
   margin-top: 50px;
   float: left;
-  text-align: center;
+
   color: #aaa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

@@ -22213,3 +22213,9 @@ a.f-fc0:hover, a:hover .f-fc0, a.f-fc3:hover, a:hover .f-fc3, a.f-fc6:hover, a:h
     transform: none;
   }
 }
+
+.footer{text-align: center;
+background-color: #D4D4D4;
+line-height: 24px;
+padding: 50px;
+}

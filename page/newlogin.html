@@ -3,8 +3,28 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/static/css/main.css">
-  <script type="text/javascript" rel="stylesheet"src="/static/js/main.js"></script>
+	<link rel="stylesheet" href="/static/css/login.css">
+	<script type="text/javascript" src="/static/js/jquery.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+ $(".email-signup").hide();
+		$("#signup-box-link").click(function(){
+			$(".email-login").fadeOut(100);
+			$(".email-signup").delay(100).fadeIn(100);
+			$("#login-box-link").removeClass("active");
+			$("#signup-box-link").addClass("active");
+		});
+		$("#login-box-link").click(function(){
+			$(".email-login").delay(100).fadeIn(100);;
+			$(".email-signup").fadeOut(100);
+			$("#login-box-link").addClass("active");
+			$("#signup-box-link").removeClass("active");
+		});
+$("button").click(function(){
+ window.open("/page/main.html","_self")
+});
+});
+		</script>
 	<title>登录/注册</title>
 </head>
 
@@ -18,8 +38,8 @@
 
   <div class="login-box">
     <div class="lb-header">
-      <a href="../index.html" class="active" id="login-box-link">登录</a>
-      <a href="../index.html" id="signup-box-link">注册</a>
+      <a href="#" class="active" id="login-box-link">登录</a>
+      <a href="#" id="signup-box-link">注册</a>
     </div>
     <div class="social-login">
       <a href="#">
@@ -38,8 +58,8 @@
       <div class="u-form-group">
         <input type="password" placeholder="密码"/>
       </div>
-      <div class="u-form-group">
-        <button>登录</button>
+      <div class="u-form-group" >
+        <button type="button">登录</button>
       </div>
       <div class="u-form-group">
         <a href="#" class="forgot-password">忘记密码?</a>
@@ -60,6 +80,6 @@
       </div>
     </form>
   </div>
-</body>
 
+	</body>
 </html>
